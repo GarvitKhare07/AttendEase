@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown</title>
+    <link rel="stylesheet" href="assignment3.css">
+</head>
+
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align:center ;
+    font-size: 15px;
+}
+#logo{
+    height: 10rem;
+    padding: 1rem 5rem ;
+}
+#navbar{
+    display: flex;
+    background-color:#1f54b8 ;
+      
+}
+
+#dropdowns{
+    display: flex;
+    position: fixed;
+    right: 0;
+}
+
+.home{
+    text-align: center;
+    background-color: #D52720;
+    color:white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+#dropdowns a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+#dropdowns a:hover {
+    background-color: #D52720;
+  }
+
+li{
+    list-style: none;
+    padding: 0.5rem;
+    border: 1px solid gray;
+    
+} 
+#drop-menu{
+    position: fixed;
+    margin-top: 3rem;
+    background-color: whitesmoke;
+    text-align: center;
+    display: none;
+}
+
+#dropper:hover #drop-menu{
+    display: block;
+}
+</style>
+
+<body>
+    <div id="header">
+        <img id="logo" src="https://web.mitsgwalior.in/images/mits-logo.png">
+
+        <div class="logo_text">
+            <h1>माधव प्रौद्योगिकी एवं विज्ञान संस्थान, ग्वालियर (म.प्र.), भारत <br>
+                Madhav Institute of Technology &amp; Science, Gwalior (M.P.), INDIA</h1>
+            <h2>Deemed University</h2>
+            <h4>(Declared under Distinct Category by Ministry of Education, Government of India)</h4>
+            <h4>NAAC ACCREDITED WITH A++ GRADE</h4>
+        </div>
+
+        <img id="logo" src="https://web.mitsgwalior.in/images/flag_logo2.png">
+    </div>
+    <div id="navbar">
+
+        <a class="home" href="#">Home</a>
+        <div id="dropdowns">
+            <div>
+                <a href="#">About Institute</a>
+                <!-- <div id="drop-menu">
+                    <li>uuv</li>
+                    <li>uuv</li>
+                </div> -->
+            </div>
+            <div id="dropper">
+                <a href="#">Academics</a>
+                <div id="drop-menu">
+                    <li>Computer science Engineering </li>
+                    <li>Civil Engineering</li>
+                    <li>Chemical Engineering</li>
+                    <li>Electrical Engineering</li>
+                    <li>Information Technology</li>
+                    <li>Centre for IOT</li>
+                </div>
+            </div>
+            <div>
+                <a href="#">Adimssion</a>
+                <!-- <div id="drop-menu">
+                    <li>uuv</li>
+                    <li>uuv</li>
+                </div> -->
+            </div>
+            <div>
+                <a href="#">Training & Placement</a>
+                <!-- <div id="drop-menu">
+                    <li>uuv</li>
+                    <li>uuv</li>
+                </div> -->
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

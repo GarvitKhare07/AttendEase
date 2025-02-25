@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+nav{
+    background-color: rgb(56, 56, 195);
+    height: 4rem;
+    align-content: center;
+
+}
+
+#nabvar{
+    display: flex;
+}
+a{
+    color: red;
+    text-decoration: none;
+    padding-left: 1rem;
+}
+
+#body{
+    display: flex;
+}
+
+h1{
+    text-align: center;
+}
+
+#sub-head{
+    text-align: center;
+}
+
+.box{
+    border-radius:10px ;
+}
+
+#left{
+    background-color: blue;
+    margin: 2rem;
+    height: 60rem;
+    width: 20rem;
+
+}
+
+#right{
+    background-color: grey;
+    margin: 2rem;
+    margin-left: 0;
+    width: 90rem;
+
+}

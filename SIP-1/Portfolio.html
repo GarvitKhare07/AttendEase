@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+}
+#navbar{
+    background-color: #D91656;
+    padding: 0 1rem 0 1rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 4rem;
+    width: 100%;
+    margin-bottom: 0;
+    position: fixed;
+    z-index: 999;
+    
+}
+
+#go_to a{
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.2s linear;
+    margin-right: 2rem;
+}
+
+#go_to{
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    left: 64%;
+    width: 30%;
+    padding: 5px;
+    color: aliceblue;
+    position: relative;
+   
+}
+
+#Home{
+    margin-top: 0;
+    padding-top: 10rem;
+    height: 40em;
+    background-color: bisque;
+}
+
+#inside_home{
+    justify-content: center;
+    height: 60% ;
+    margin: 7rem;
+    margin-top: 0;
+    padding: 5rem;
+    background-color: #DEAA79;
+    border-radius: 60px;
+    font-size: larger;
+}
+
+#about{
+    margin-top: 3rem;
+    flex-wrap: wrap;
+    width: 35rem;
+}
+
+#inside_home img{
+    margin-left: 45rem ;
+    margin-top: -18rem;
+    height:300px;
+    border-radius: 60px;
+}
+
+
+#Qualifications{
+    margin-top: 0;
+    padding-top: 7rem;
+    height: 30em;
+    background-color:bisque;
+    padding: 5rem;
+    font-size: larger;
+}
+
+#line-btm{
+    position: relative;
+    background-color: black;
+    height: 3px;
+    width: 8rem;
+    left: 45%;
+    margin-bottom: 4rem;
+}
+
+#Qualifications H1{
+    text-align: center;
+}
+
+.Qualifications{
+    justify-content: space-around
+}
+
+.Qualifications ul{
+    width: 50rem;
+}
+#education{
+    display: flex;
+}
+
+#skills{
+    display: flex;
+}
+
+li{
+    list-style:disc ;
+    margin-top: 1rem;
+}
+
+
+
+#line{
+    position: relative;
+    margin: 2rem 0 2rem 0;
+    height: 2px;
+    width: 100%;
+    background-color: black;
+    opacity: 18%;
+    /* left: 30%; */
+}
+
+#Projects h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#Projects{
+    margin-top: 0;
+    padding-top: 7rem;
+    height: 45em;
+    /* background-color:#D91656; */
+    background-color: bisque;
+    padding: 5rem;
+}
+
+#proj{
+    display: flex;
+    margin: 2rem;
+    padding: 1rem;
+    height: 10rem;
+    font-size: larger;
+    justify-content: space-between;
+}
+
+#proj-title{
+    width: 40%;
+
+}
+
+#proj img{
+    justify-content: center;
+    align-items: center;
+}
+
+#proj a{
+    font-size: large;
+    text-decoration: none;
+}
+
+#contact{
+    display: flex;
+    margin-top: 0;
+    padding-top: 7rem;
+    height: 35em;
+    background-color:#DEAA79;
+    padding: 5rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.cont-div{
+    height: 30%;
+    width: 40%;
+}
+
+#contact_me{
+    align-items: center;
+}
+
+input{
+    border: none;
+    border-radius: 10px;
+    background-color: bisque;
+}
+
+textarea{
+    border: none;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-top: 1rem;
+    background-color: bisque;
+}
+
+#name,#email{
+    height: 2rem;
+    width: 36.1rem;
+    padding: 0.5rem;
+    margin: 1rem 0 1rem 0;
+}
+
+#submit{
+    height: 3rem;
+    width: 15rem;
+    justify-content: center;
+    background-color: #D91656;
+    font-size: large;
+}
+
+/* #contact-info{
+    
+} */
+
+#info{
+    display: flex;
+    font-size: larger;
+    padding: 2rem;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+#circle{
+    position: relative;
+    font-size: x-large;
+    height: 2rem;
+    width: 2rem;
+    border:5px solid black;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-right: 2rem;
+}
+
+#circle i{position: relative;
+    align-items: center;
+    justify-content: center;
+    left: 5px;
+}
+
+#info a{
+    text-decoration: none;
+    color: rgb(54, 63, 166);
+}
+</style>
+
+<body>
+    <div id="navbar">
+        <h2>Portfolio</h2>
+        <div id="go_to">
+            <a href="#">Home</a>
+            <a href="#Qualifications">Qualifications</a>
+            <a href="#Projects">Projects</a>
+            <a href="#contact_me">contact me</a>
+        </div>
+    </div>
+
+    <div id="Home">
+        <div id="inside_home">
+            <h2>Hello!</h2>
+            <h1>I'm Garvit Khare</h1>
+            <div>
+                <p id="about">I'm a student at MITS Gwalior specializing in Internet of Things with a passion for
+                    crafting engaging and functional digital experiences as a Front-End Web Developer.<br>
+                    I enjoy transforming creative ideas into responsive and user-friendly websites, blending clean code
+                    with intuitive design. My technical expertise spans HTML, CSS, JavaScript, and modern frameworks
+                    like React, ensuring each project meets performance and usability standards.</p>
+                <img src="https://nogunk.com/cdn/shop/articles/Chris_Evans_header_image_2048x.jpg?v=1644335593"
+                    alt="My image" height="100px">
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="Qualifications">
+        <h1>Qualifications</h1>
+        <div id="line-btm"></div>
+
+            <div  class="Qualifications">
+                <div id="education" class="Qualifications">
+                    <h3>Education</h3>
+                <ul>
+                    <li>10th (2021): Kendriya Vidhyalaya<br>result- 95%</li>
+                    <li>12th (2023): Kendriya Vidhyalaya<br>result- 89%</li>
+                    <li>B.Tech(2023-present) : Madhav Institute of Technology and Science<br>CGPA : 8.4</li>
+                </ul>
+                </div>
+                
+            </div>
+
+            <div id="line"></div>
+    
+            <div id="skills" class="Qualifications">
+                <h3>Skills</h3>
+                <ul>
+                    <li>HTML & CSS </li>
+                    <li>JavaScript</li>
+                    <li>Python</li>
+                    <li>SQL</li>
+                </ul>
+            </div>
+
+        
+    </div>
+
+    <div id="Projects">
+        <h1>My Projects</h1>
+        <div id="line-btm"></div>
+
+        <div id="proj">
+            <div id="proj-title">
+                <h4>Amazon Clone using Html and CSS</h4>
+            <p>Developed a fully responsive front-end clone of Amazon using HTML and CSS. Implemented a pixel-perfect layout with a focus on replicating the original design and ensuring cross-device compatibility.</p>
+            <a href="Amazon.html" target="_blank">visit <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+            <div>
+                
+            <img src="https://codewithcurious.com/wp-content/uploads/2024/02/Handwritten-Notes-2024-09-10T052053.876-1024x576.png.webp" height="150px">
+            </div>
+            </div>
+        <div id="proj">
+            <div id="proj-title">
+                <h4>Currency Converter using api in js</h4>
+            <p>Built a dynamic currency converter using JavaScript and external APIs. Features real-time exchange rate updates and user-friendly input handling to provide accurate currency conversions.</p>
+            <a href="CurrConverter.html" target="_blank">visit <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+             
+             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxvxEZMaBSdouTz9rZROWp4tGj4OnqBEzGww&s" height="150px">
+        </div>
+        <div id="proj">
+            <div id="proj-title">
+                <h4>Spotify Clone (front end project)</h4>
+            <p>Created a visually stunning front-end clone of Spotify using modern web design principles. Designed an engaging user interface with responsive layouts, showcasing creativity and attention to detail.</p>
+            <a href="Spotify.html" target="_blank">visit <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            
+            </div>
+            
+            <img src="https://miro.medium.com/v2/resize:fit:828/format:webp/1*vbo2TBw7RFhYp035DqF6FA.jpeg" height="150px">
+        </div>
+    </div>
+
+    <div id="contact">
+        <div id="contact_me" class="cont-div">
+            <h1>Contact me</h1>
+            <div id="input">
+                <form>
+                    <input id="name" type="text" required placeholder="Your Name"> <br>
+                    <input id="email" type="email" required placeholder="Your Email"><br>
+                    <textarea id="message" rows="10" cols="90" placeholder="Type your message here!"></textarea> <br><br>
+                    <input id="submit" type="submit" value="Send Message">
+                </form>
+
+            </div>
+        </div>
+        <div id="contact-info" class="cont-div">
+            <h1>Contact Info</h1>
+
+            <div id="info">
+                <div id="circle">
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div>
+                    <h4>Email</h4>
+                    <a href="mailto:garvitkhare6805@gmail.com?subject=Hello&body=I%20would%20like%20to%20connect." target="_blank">garvitkhare6805@gmail.com</a>
+                </div>
+            </div>
+
+            <div id="info">
+                <div id="circle">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+                <div>
+                    <h4>LinkedIN</h4>
+                    <a href="https://www.linkedin.com/in/garvit-khare-964480294/" target="_blank">LinkedIN/Garvit-Khare</a>
+                </div>
+            </div>
+
+            <div id="info">
+                <div id="circle">
+                    <i class="fa-brands fa-square-github"></i>
+                </div>
+                <div>
+                    <h4>GitHub</h4>
+                    <a href="https://github.com/GarvitKhare07" target="_blank">GitHUB/Garvit-Khare</a>
+                </div>
+            </div>
+
+            <div id="info">
+                <div id="circle">
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+                <div>
+                    <h4>Instagram</h4>
+                    <a href=" " target="_blank">_garvit_777</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

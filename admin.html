@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="nav">
+    <a href="index.html">Logout</a>
+  </div>
+  <div class="container">
+    <h2>Admin Dashboard</h2>
+
+    <section class="card">
+      <h3>Add Student</h3>
+      <div class="grid">
+        <input id="sName" placeholder="Full Name">
+        <input id="sEnroll" placeholder="Enrollment No">
+        <input id="sRFID" placeholder="RFID Tag (e.g., A1:B2:C3)">
+        <button onclick="addStudent()">Add</button>
+      </div>
+      <p id="addStudentMsg" class="msg"></p>
+    </section>
+
+    <section class="card">
+      <h3>Attendance Logs</h3>
+      <button onclick="loadAttendance()">Refresh</button>
+      <table id="logsTable">
+        <thead><tr><th>Name</th><th>Enrollment</th><th>Time</th><th>Status</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </section>
+  </div>
+  <script src="js/admin.js"></script>
+</body>
+</html>

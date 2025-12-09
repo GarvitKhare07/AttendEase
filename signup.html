@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Signup - RFID Attendance</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="login-container">
+    <h1>New User Registration</h1>
+    <input type="text" id="name" placeholder="Full Name">
+    <input type="text" id="username" placeholder="Enrollment No / Faculty ID">
+    <input type="text" id="collegeId" placeholder="College ID">
+    <input type="password" id="password" placeholder="New Password">
+    <select id="role">
+      <option value="student">Student</option>
+      <option value="teacher">Teacher</option>
+    </select>
+    <input type="text" id="rfidTag" placeholder="RFID Tag (Scan or Enter)">
+    <button id="signupBtn">Register</button>
+    <p>Already have an account? <a href="index.html">Login</a></p>
+  </div>
+  <script src="js/signup.js"></script>
+</body>
+</html>

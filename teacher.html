@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Teacher Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="nav">
+    <a href="index.html">Logout</a>
+  </div>
+  <div class="container">
+    <h2>Teacher Dashboard</h2>
+
+    <section class="card">
+      <h3>Attendance (Recent)</h3>
+      <button onclick="loadAttendance()">Refresh</button>
+      <table id="attTable">
+        <thead><tr><th>Name</th><th>Enrollment</th><th>Timestamp</th><th>Status</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </section>
+
+    <section class="card">
+  <h3>Manual Attendance Entry</h3>
+  <div class="grid">
+    <input id="manualEnroll" placeholder="Enter Enrollment No.">
+    <select id="manualStatus">
+      <option value="P">Present</option>
+      <option value="A">Absent</option>
+      <option value="L">Late</option>
+      <option value="M">Medical Leave</option>
+    </select>
+    <button onclick="markManual()">Submit</button>
+  </div>
+  <p id="manualMsg" class="msg"></p>
+</section>
+
+  </div>
+  <script src="js/teacher.js"></script>
+</body>
+</html>
